@@ -29,6 +29,7 @@ class LoggerService : Service() {
 
     override fun onCreate() {
         super.onCreate()
+        FloatViewManager.init(this)
         Log.i(javaClass.simpleName, "--LoggerService onCreate--")
     }
 
